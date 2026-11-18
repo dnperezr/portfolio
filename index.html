@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nicolás Pérez — AI & Art Direction</title>
+<meta name="description" content="Nicolás Pérez — Creative Director. AI & Art Direction, brand & identity, content, film and digital.">
+<meta property="og:title" content="Nicolás Pérez — AI & Art Direction">
+<meta property="og:description" content="Nicolás Pérez — Creative Director. AI & Art Direction, brand & identity, content, film and digital.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#000000">
+<link rel="preload" href="fonts/MessinaSans-Black.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+<link rel="preload" as="image" href="img/art-director-black.webp" type="image/webp">
+</head>
+<body>
+<noscript><style>#pin{height:100vh !important}</style></noscript>
+<div id="pin" style="position:relative;background:var(--bg);">
+  <div id="stage" style="position:sticky;top:0;height:100vh;overflow:hidden;">
+
+    <div id="heroBg" style="position:absolute;inset:0;z-index:1;overflow:hidden;will-change:clip-path;">
+      <div style="position:absolute;inset:0;display:flex;">
+        <div style="width:50%;height:100%;background-image:url('img/runner.webp');background-size:cover;background-position:center;"></div>
+        <div style="width:50%;height:100%;background-image:url('img/lighthouse.webp');background-size:cover;background-position:center;"></div>
+      </div>
+    </div>
+    <div style="position:absolute;inset:0;z-index:2;background:var(--bg);opacity:0;pointer-events:none;"></div>
+
+    <div id="cycle" aria-hidden="true" style="position:absolute;inset:0;z-index:5;background-size:cover;background-position:center;will-change:transform;display:none;"></div>
+
+    <div id="heroContent" style="position:absolute;inset:0;z-index:6;pointer-events:none;will-change:opacity;">
+      <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:clamp(18px,2.5vw,32px);font-size:234px;">
+        <div id="eyebrow" style="color:var(--accent);font-weight:700;font-size:10px;letter-spacing:-0.02em;line-height:1.25;text-transform:uppercase;text-shadow:0 1px 8px rgba(0,0,0,.9);">Content &amp; Marketing<br>Web &amp; Digital<br>Brand &amp; Identity</div>
+        <div id="lockWrap" style="transform-origin:center;display:inline-block;will-change:transform;">
+          <h1 id="heroTitle" style="position:relative;color:var(--accent);font-weight:900;text-transform:uppercase;line-height:0.75;font-size:238px;letter-spacing:-0.067em;font-kerning:none;display:inline-block"><span style="display:block;transform:scaleX(.75);transform-origin:center;">NICO</span><span style="display:block;transform:scaleX(.75);transform-origin:center;">PEREZ</span><picture style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:36%;height:auto;pointer-events:none;z-index:2;"><source srcset="img/art-director-black.webp" type="image/webp"><img src="img/art-director-black.gif" alt="Art Director" width="720" height="430" style="width:100%;height:auto;display:block;"></picture></h1>
+        </div>
+      </div>
+      <div id="bottomBar" style="position:absolute;left:0;right:0;bottom:0;display:flex;justify-content:space-between;align-items:center;padding:22px clamp(20px,4vw,56px);color:var(--text-primary);font-weight:400;font-size:13px;letter-spacing:-0.02em;text-transform:uppercase;">
+        <span>Art</span>
+        <span>Director</span>
+      </div>
+    </div>
+
+    <div id="reveal" style="position:absolute;inset:0;z-index:7;overflow:hidden;transform:translate3d(0,100%,0);will-change:transform,border-radius;">
+      <div style="position:absolute;inset:0;display:flex;">
+        <div style="position:relative;width:50%;height:100%;overflow:hidden;">
+          <div id="ilb" style="position:absolute;inset:0;z-index:1;background-size:cover;background-position:center;"></div>
+          <div id="ilt" style="position:absolute;inset:0;z-index:2;background-size:cover;background-position:center;"></div>
+        </div>
+        <div style="position:relative;width:50%;height:100%;overflow:hidden;">
+          <div id="irb" style="position:absolute;inset:0;z-index:1;background-size:cover;background-position:center;"></div>
+          <div id="irt" style="position:absolute;inset:0;z-index:2;background-size:cover;background-position:center;"></div>
+        </div>
+      </div>
+
+      <div id="cur" style="position:absolute;inset:0;z-index:5;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:clamp(20px,4vw,56px);pointer-events:none;">
+        <div id="eyeCur" style="font-weight:400;font-size:10px;letter-spacing:-0.02em;line-height:1.25;text-transform:uppercase;margin-bottom:clamp(18px,2.5vw,32px);"></div>
+        <h2 id="titleCur" style="color:var(--accent);font-weight:900;text-transform:uppercase;line-height:0.75;font-size:clamp(64px,14vw,190px);letter-spacing:-0.067em;transform:scaleX(0.75);transform-origin:center;display:inline-block;"></h2>
+        <a id="ctaCur" href="#" style="position:absolute;bottom:clamp(20px,3vw,40px);left:50%;transform:translateX(-50%);pointer-events:auto;font-weight:400;font-size:13px;letter-spacing:-0.02em;text-transform:uppercase;"></a>
+      </div>
+
+      <div id="next" style="position:absolute;inset:0;z-index:4;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:clamp(20px,4vw,56px);pointer-events:none;">
+        <div id="eyeNext" style="font-weight:400;font-size:10px;letter-spacing:-0.02em;line-height:1.25;text-transform:uppercase;margin-bottom:clamp(18px,2.5vw,32px);"></div>
+        <h2 id="titleNext" style="color:var(--accent);font-weight:900;text-transform:uppercase;line-height:0.75;font-size:clamp(64px,14vw,190px);letter-spacing:-0.067em;transform:scaleX(0.75);transform-origin:center;display:inline-block;"></h2>
+        <a id="ctaNext" href="#" style="position:absolute;bottom:clamp(20px,3vw,40px);left:50%;transform:translateX(-50%);pointer-events:auto;font-weight:400;font-size:13px;letter-spacing:-0.02em;text-transform:uppercase;"></a>
+      </div>
+    </div>
+
+    <nav id="nav" style="position:absolute;top:0;left:0;right:0;z-index:8;display:flex;justify-content:space-between;align-items:center;color:#FFEC00;font-weight:400;font-size:11px;letter-spacing:-0.02em;text-transform:uppercase;text-shadow:0 1px 6px rgba(0,0,0,.85);padding:clamp(20px,3vw,40px) clamp(20px,4vw,56px);">
+      <a href="work.html" class="nav-fade">Work</a>
+      <a href="contact.html" class="nav-fade">Contact</a>
+    </nav>
+
+  </div>
+</div>
+
+<footer style="position:relative;z-index:20;overflow:hidden;background:var(--bg);color:var(--text-primary);">
+  <div style="display:flex;justify-content:space-between;align-items:center;padding:22px clamp(20px,4vw,56px);font-weight:400;font-size:11px;letter-spacing:-0.02em;text-transform:uppercase;color:#FFEC00;border-bottom:1px solid var(--line);">
+    <span>AI</span>
+    <span style="color:var(--accent);font-weight:900;font-size:15px;letter-spacing:0;">&amp;</span>
+    <span>Art</span>
+  </div>
+  <div class="foot-nav" style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:clamp(2px,0.5vw,6px);padding:clamp(40px,6vw,72px) 24px;">
+    <a href="index.html" data-home>Home</a>
+    <a href="work.html">Work</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div style="position:relative;overflow:hidden;padding-top:6px;border-top:1px solid rgba(255,255,255,.12);">
+    <div id="footTrack" style="display:flex;width:max-content;animation:run 26s linear infinite;"><div style="display:flex;align-items:center;gap:48px;padding-right:48px;"><span class="foot-word">Nico Perez</span><picture style="height:clamp(46px,8vw,110px);width:auto;display:block;flex:0 0 auto;"><source srcset="img/art-director-footer.webp" type="image/webp"><img src="img/art-director-footer.gif" alt="Art Director" width="720" height="430" loading="lazy" style="height:100%;width:auto;display:block;"></picture></div><div style="display:flex;align-items:center;gap:48px;padding-right:48px;"><span class="foot-word">Nico Perez</span><picture style="height:clamp(46px,8vw,110px);width:auto;display:block;flex:0 0 auto;"><source srcset="img/art-director-footer.webp" type="image/webp"><img src="img/art-director-footer.gif" alt="Art Director" width="720" height="430" loading="lazy" style="height:100%;width:auto;display:block;"></picture></div><div style="display:flex;align-items:center;gap:48px;padding-right:48px;"><span class="foot-word">Nico Perez</span><picture style="height:clamp(46px,8vw,110px);width:auto;display:block;flex:0 0 auto;"><source srcset="img/art-director-footer.webp" type="image/webp"><img src="img/art-director-footer.gif" alt="Art Director" width="720" height="430" loading="lazy" style="height:100%;width:auto;display:block;"></picture></div><div style="display:flex;align-items:center;gap:48px;padding-right:48px;"><span class="foot-word">Nico Perez</span><picture style="height:clamp(46px,8vw,110px);width:auto;display:block;flex:0 0 auto;"><source srcset="img/art-director-footer.webp" type="image/webp"><img src="img/art-director-footer.gif" alt="Art Director" width="720" height="430" loading="lazy" style="height:100%;width:auto;display:block;"></picture></div><div style="display:flex;align-items:center;gap:48px;padding-right:48px;"><span class="foot-word">Nico Perez</span><picture style="height:clamp(46px,8vw,110px);width:auto;display:block;flex:0 0 auto;"><source srcset="img/art-director-footer.webp" type="image/webp"><img src="img/art-director-footer.gif" alt="Art Director" width="720" height="430" loading="lazy" style="height:100%;width:auto;display:block;"></picture></div><div style="display:flex;align-items:center;gap:48px;padding-right:48px;"><span class="foot-word">Nico Perez</span><picture style="height:clamp(46px,8vw,110px);width:auto;display:block;flex:0 0 auto;"><source srcset="img/art-director-footer.webp" type="image/webp"><img src="img/art-director-footer.gif" alt="Art Director" width="720" height="430" loading="lazy" style="height:100%;width:auto;display:block;"></picture></div></div>
+  </div>
+  <div style="display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;padding:22px clamp(20px,4vw,56px);border-top:1px solid var(--line);font-size:12px;font-weight:400;">
+    <div style="display:flex;align-items:center;gap:22px;flex-wrap:wrap;">
+      <span style="letter-spacing:-0.02em;text-transform:uppercase;font-weight:400;">
+        <a href="https://www.linkedin.com/in/nicolás-pérez-5980b3216/" target="_blank" rel="noopener" style="color:var(--text-secondary);">LI</a>
+        <a href="https://www.instagram.com/dnperezr/" target="_blank" rel="noopener" style="color:var(--text-secondary);">IG</a>
+        <a href="https://www.behance.net/NicoPerez" target="_blank" rel="noopener" style="color:var(--text-primary);text-decoration:underline;text-underline-offset:3px;">BE.</a>
+      </span>
+      <span style="color:var(--text-secondary);">© 2026 Nicolás Pérez. All rights reserved.</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;">
+      <div style="color:var(--text-secondary);letter-spacing:-0.02em;">
+        <a href="#" style="color:var(--text-secondary);">Privacy Policy</a>, <a href="#" style="color:var(--text-secondary);">Terms of Service</a>
+      </div>
+      <div id="footBarsBox" aria-hidden="true" style="position:relative;overflow:hidden;height:13px;width:min(300px,24vw);opacity:.42;">
+        <div id="footBarsGrp" style="position:absolute;top:0;left:0;height:100%;display:flex;align-items:center;gap:7px;width:max-content;animation:cross 6.4s linear infinite;"><span style="background:#FFEC00;height:100%;flex:0 0 auto;width:128px;"></span><span style="background:#FFEC00;height:100%;flex:0 0 auto;width:128px;"></span><span style="background:#FFEC00;height:100%;flex:0 0 auto;width:44px;"></span><span style="background:#FFEC00;height:100%;flex:0 0 auto;width:40px;"></span><span style="background:#FFEC00;height:100%;flex:0 0 auto;width:34px;"></span><span style="background:#FFEC00;height:100%;flex:0 0 auto;width:28px;"></span><span style="background:#FFEC00;height:100%;flex:0 0 auto;width:16px;"></span><span style="background:#FFEC00;height:100%;flex:0 0 auto;width:9px;"></span><span style="background:#FFEC00;height:100%;flex:0 0 auto;width:6px;"></span><span style="background:#FFEC00;height:100%;flex:0 0 auto;width:4px;"></span></div>
+      </div>
+    </div>
+  </div>
+</footer>
+<div id="grain" aria-hidden="true"></div>
+<script src="common.js"></script>
+<script src="home.js"></script>
+</body>
+</html>
